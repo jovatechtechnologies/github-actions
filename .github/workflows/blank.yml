@@ -1,0 +1,19 @@
+name: github-action-name
+on:
+  push:
+  #   branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  job-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: name-of-step
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
